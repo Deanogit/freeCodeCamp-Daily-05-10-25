@@ -16,10 +16,7 @@ function hasExoplanet(readings) {
   }
 
   // get average
-  const arrTotal = calcArr.reduce(
-    (a, b) => Number.parseInt(a) + Number.parseInt(b),
-    0
-  );
+  const arrTotal = calcArr.reduce((a, b) => a + b, 0);
   const avg = arrTotal / calcArr.length;
 
   // get threshold
